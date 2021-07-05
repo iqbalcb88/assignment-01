@@ -20,7 +20,10 @@ p {
 .width-half {
   width: 50%;
 }
-
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 .grid-center {
   display: grid;
   align-content: center;
