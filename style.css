@@ -57,26 +57,33 @@ p {
   box-shadow: -0.5em 0.2em 1em grey;
 }
 
-.form-section,
-.banner-container,
-.about-container,
-.social-container {
+.banner-container {
   display: flex;
-  padding: 0 5%;
-  margin: 5% 0;
+  padding: 02.5% 10% 5% 10%;
+  margin: 0;
 }
 .recipe-container {
-  padding: 0 5%;
-  margin: 0 0 2.5% 0;
+  padding: 0%;
 }
 
 .about-container {
+  display: flex;
+  padding: 0 5%;
   background-image: url(images/shapes/bg-2.jpg);
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+}
+.form-section {
+  background-color: #ecf0f3;
+  /* background-image: url(images/shapes/bg-2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; */
 }
 .img-resize {
   width: 40%;
@@ -110,6 +117,7 @@ p {
 .social-container {
   margin: 7% 2% 4% 2%;
   border-radius: 0.5em;
+  padding: 2em 0;
 }
 
 .social-card {
@@ -131,4 +139,41 @@ footer {
   font-weight: 100;
   font-size: 1em;
   padding: 3em 0;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 01.5em;
+  padding: 0.5em;
+}
+
+fieldset {
+  width: 50%;
+  padding: 0.5% 5% 0 5%;
+  margin: 1.5% 0;
+}
+
+button {
+  margin: 1em 0;
+}
+.gallery-section {
+  padding: 5% 10%;
+  background-image: url(images/food/gallery.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.gallery-card {
+  border: 3px solid;
+  border-image: linear-gradient(rgb(104, 199, 243), rgb(35, 160, 10), tomato);
+  border-image-slice: 7 12 14 5;
 }
